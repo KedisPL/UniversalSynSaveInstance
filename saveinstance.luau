@@ -1267,6 +1267,7 @@ do
 			end,
 		},
 		TriangleMeshPart = {
+			collisionFidelity = "CollisionFidelity",
 			FluidFidelityInternal = "FluidFidelity",
 		},
 		MeshPart = { InitialSize = "MeshSize" },
