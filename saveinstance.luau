@@ -1267,8 +1267,6 @@ do
 			end,
 		},
 		TriangleMeshPart = {
-			collisionfidelity = "CollisionFidelity",
-			CollisionFidelity = "CollisionFidelity",
 			FluidFidelityInternal = "FluidFidelity",
 		},
 		MeshPart = { InitialSize = "MeshSize" },
@@ -1529,6 +1527,10 @@ do
 										end
 									end
 								end
+							end
+							
+							if not Special and (ClassName == "TriangleMeshPart" or ClassName == "MeshPart") and PropertyName == "CollisionFidelity" then
+								Special = true
 							end
 
 							-- if not Special then
